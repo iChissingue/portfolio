@@ -1,45 +1,40 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import {Head} from './Head'
 
 export default function Home() {
   return (
+    <div>
+      <Head/>    
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+        <div className={styles.myname}>
+          <h4>Hi, my name is</h4>
+          <h1 style={{fontSize: 50}}>Inácio Chissingue</h1>
+          <h2>I am Web Developer</h2>
+        </div>
         <div>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="/me.png"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
             <Image
-              src="/vercel.svg"
+              src="/me.png"
               alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
+              className={styles.myPhoto}
+              width={150}
+              height={150}
               priority
             />
           </a>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+     
 
-      <div className={styles.grid}>
+      {/* <div className={styles.grid}>
+       
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -89,7 +84,8 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
+    </div>
   )
 }

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 10rem;
   min-height: 100vh;
 }
 
@@ -102,6 +102,10 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
+}
+
+.myPhoto{
+  border-radius: 50%;
 }
 
 .logo {
@@ -210,8 +214,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .myPhoto {
     filter: invert(1);
+    border-radius: 50%;
   }
 
   .logo {
