@@ -3,5 +3,6 @@ const nextConfig = {}
 
 module.exports = {
     // nextConfig,
-    dist: 'build'
+    distDir: 'build',
+    output: 'export'
 }
