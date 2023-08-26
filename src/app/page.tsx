@@ -20,7 +20,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/me.png"
+              src="/me.svg"
               alt="Vercel Logo"
               className={styles.myPhoto}
               width={150}
