@@ -1,13 +1,36 @@
 .head{
+    padding: 0 60px;
     background-color: #d8dcdd;
     height: 4rem;
     line-height: 4rem;
-    text-align: center;
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     box-shadow: 1px 1px 20px 1px rgb(141, 136, 136);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.head .navBar{
+    color: rgb(7, 7, 87);
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: var(--font-mono);
+    color: rgb(21, 21, 90);
+    font-weight:bold;
+}
+
+.navBar a{
+    display: flex;
+    text-align: center;
+   
+    
 }
 
 .myname{

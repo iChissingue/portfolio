@@ -15,7 +15,7 @@ export default function Home() {
         </div>
         <div>
           <a
-            href="/me.png"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
           >
